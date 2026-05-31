@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    top: 0;
+}
+
+#main{
+    height: 100vh;
+}
+
+#mainbody{
+    height: 90%;
+}
+
+#main-colors{
+    height: 10%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+}
+
+button{
+    padding: 5px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 30px;
+}
+
+button:hover{
+    background-color: rgb(56, 54, 54);
+}
+
+
+#red{
+    color: red;
+}
+
+#green{
+    color: green;
+}
+
+#blue{
+    color: blue;
+}
+
+#random{
+    color: blueviolet;
+}

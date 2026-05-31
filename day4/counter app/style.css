@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    top: 0;
+    color: aliceblue;
+}
+body{
+    background: #000;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:  center;
+}
+
+#main{
+    height: 200px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+}
+
+#counterValue{
+    font-size: 100px;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+}
+
+#funtions{
+    height: 50px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.fxn-btns{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#increment{
+    font-size: 40px;
+    color: green;
+}
+
+#decrement{
+    font-size: 40px;
+    color: blue;
+}
+
+#reset{
+    font-size: 20px;
+    color: red;
+}

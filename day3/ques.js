@@ -44,3 +44,19 @@
 // }
 // console.log(cnt);
 
+// Create student object
+// Add property
+// Update property
+// Delete property
+// Print all values
+// let student = {
+//     name : "nishant",
+//     age : 21,
+// }
+
+// student.name = "Nishant";
+// delete student.age;
+
+// for(let item in student){
+//     console.log(student[item]);
+// }
