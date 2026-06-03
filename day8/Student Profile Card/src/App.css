@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.container{
+    background-color: rgb(108, 104, 104);
+    border-radius: 20px;
+    padding: 20px;
+    
+}
+  
