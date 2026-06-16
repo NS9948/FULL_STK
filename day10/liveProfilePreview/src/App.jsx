@@ -18,7 +18,7 @@ const App = () => {
       <h2>Student Profile</h2>
       <p>Name: {name}</p>
       <p>Course: {course}</p>
-      <p>Year: {year}</p>
+      <p>Year: {year}</p>s
     </>
     
   )
