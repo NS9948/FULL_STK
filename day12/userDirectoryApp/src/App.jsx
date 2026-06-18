@@ -1,10 +1,11 @@
 import { useState,useEffect } from 'react'
+import SearchBar from './components/SearchBar';
+import UserList from './components/UserList';
 
 function App() {
 
   const [users, setUsers] = useState([])
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState("");
   const [search, setSearch] = useState("")
 
   useEffect(() => {
@@ -32,16 +33,10 @@ function App() {
   return (
     <>
       <div><h1>User Directory App</h1></div>
-      <input type="text" value={search} onChange={e => setSearch(e.target.value)} placeholder='Search Any user'/>
+      <SearchBar search={search} setSearch={setSearch}/> 
       {
         <div>
-        {filteredUsers.map(user => (
-          <div key={user.id}>
-            <p>{user.name}</p>
-            <p>{user.username}</p>
-            <p>{user.email}</p>
-          </div>
-        ))}
+        <UserList filteredUsers={filteredUsers} />
       </div>
       }   
       
