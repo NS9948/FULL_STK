@@ -1,7 +1,5 @@
-
-
 import './App.css'
-import { useState,useEffect } from 'react'
+import { useState } from 'react'
 
 function App() {
   const initialForm = {
@@ -12,13 +10,13 @@ function App() {
   };
 
   const [errors, setErrors] = useState(initialForm);
-  const [form,setForm] = useState(initialForm)
+  const [form, setForm] = useState(initialForm)
 
-  const [employees,setEmployees] = useState([])
+  const [employees, setEmployees] = useState([])
 
 
   function handleChange(e){
-    setForm({...form, [e.target.name] : e.target.value})
+    setForm({ ...form, [ e.target.name ] : e.target.value })
   }
 
   function handleSubmit(e){
@@ -48,8 +46,6 @@ function App() {
 
     if(Object.keys(newErrors).length > 0){
       setErrors(newErrors);
-
-
       return;
     }
 
@@ -57,9 +53,7 @@ function App() {
     setForm(initialForm)
     setErrors(initialForm)
 
-
   }
-
 
   return (
     <>
@@ -96,6 +90,7 @@ function App() {
         <input type="submit" />
       </div>
     </form>
+
     {employees.map((emp, index) => (
         <div key={index}>
           <h3>{emp.name}</h3>
@@ -104,6 +99,7 @@ function App() {
           <p>{emp.department}</p>
         </div>
       ))}
+
     </>
   )
 }
