@@ -1,6 +1,5 @@
 import { useState } from 'react'
 
-
 function App() {
   const initialForm = {
     name: "",
@@ -51,8 +50,9 @@ function App() {
       setEmployees(prev => [...prev, {id: Date.now(),...form}])
     }
     
+
     setForm(initialForm)
-    
+
 
 
   }
@@ -107,8 +107,8 @@ function App() {
         </button>
       </div>)
     }
-      
-      
+
+
     </>
   )
 }
